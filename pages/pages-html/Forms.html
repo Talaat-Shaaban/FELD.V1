@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <h1>Forms</h1>
+
+    <hr> <br>
+
+    
+    <form action="" method="get" target="_blank"> <!--novalidate to make form dont check the input reqird for test-->
+        <div>
+            <label for="">User Name</label>
+            <input type="text" required placeholder="your name" name="usename" value="talaat" readonly>
+        </div>
+        <br>
+        <div>
+            <label for="">E-mail</label>
+            <input type="email" placeholder="your email" value="ta@go.com" name="email" disabled>
+        </div>
+        <br>
+        <div>
+            <label for="">subject</label>
+            <input type="text" placeholder="your subject"name="subject" autofocus>
+        </div>
+        <br>
+        <div>
+            <label for="">Password</label>
+            <input type="password" placeholder="your password" name="pass" minlength="10" maxlength="15">
+        </div>
+        <br>
+        <div>
+            <input type="Hidden" value="talaat" name="talaat-hidden">
+        </div>
+        <br>
+        <div>
+            <label for="">Color</label>
+            <input type="Color" name="Color">
+        </div>
+        <br>
+        <div>
+            <label for="">Renge</label>
+            <input type="range" name="renge" min="0" max="100" step="20" value="70">
+        </div>
+        <br>
+        <div>
+            <label for="Num">Numer</label>
+            <input id="Num" type="number" name="number" min="10" max="100" step="10">
+        </div>
+        <br><hr>
+        <div>
+            <input id="win" type="radio" name="os" value="window">
+            <label for="win">window</label>
+            <br>
+            <input id="Mac" type="radio" name="os" value="Mac">
+            <label for="Mac">Mac</label>
+            <br>
+            <input id="Linux" type="radio" name="os" value="Linux" checked>
+            <label for="Linux">Linux</label>
+        </div>
+        <br><hr>
+        <div>
+            <input id="win1" type="checkbox" name="os" value="window" checked>
+            <label for="win1">window</label>
+            <br>
+            <input id="Mac1" type="checkbox" name="os" value="Mac">
+            <label for="Mac1">Mac</label>
+            <br>
+            <input id="Linux1" type="checkbox" name="os" value="Linux">
+            <label for="Linux1">Linux</label>
+        </div>
+        <hr><br>
+        <div>
+            <label for="book">book</label>
+            <select name="book" id="book"> <!-- (multiple) to select one and more option-->
+                <optgroup label="Police">
+                    <option value="b1">book 1</option>
+                    <option value="b2">book 2</option>
+                    <option value="b3" selected>book 3</option>
+                </optgroup>
+                <optgroup label="Romanic">
+                    <option value="bo1">book 1</option>
+                    <option value="bo2">book 2</option>
+                    <option value="bo3">book 3</option>
+                </optgroup>
+                <optgroup label="Fantzia">
+                    <option value="boo1">book 1</option>
+                    <option value="boo2">book 2</option>
+                    <option value="boo3">book 3</option>
+                </optgroup>
+            </select>
+        </div>
+        <hr><br><br>
+        <div>
+            <textarea name="textara" placeholder="enter your proplam" cols="30" rows="5"></textarea>
+        </div>
+        <hr><br>
+        <div>
+            <label for="uplod">uplod</label>
+            <input type="file">
+        </div>
+        <hr><br>
+        <div>
+            <label for="Search">Search</label>
+            <input type="search">
+        </div>
+        <hr><br>
+        <div>
+            <label for="URL">URL</label>
+            <input type="url">
+        </div>
+        <hr><br>
+        <div>
+            <label for="date">Date</label>
+            <input id="date" type="date">
+            <br>
+            <label for="month">Month</label>
+            <input id="month" type="month">
+            <br>
+            <label for="time">Time</label>
+            <input id="time" type="time">
+        </div>
+
+        <hr><br>
+        <div>
+            <label for="list">chous your lang favoret</label>
+            <input id="list" list="programing" name="pro" placeholder="chous your land favoret">
+            <datalist id="programing">
+                <option value="Html">
+                <option value="Css">
+                <option value="Js">
+                <option value="Php">
+                <option value="Python">
+                <option value="Ruby">
+            </datalist>
+        </div>
+
+        <hr><br>
+        <div>
+            <input type="reset" value="reset data">
+            <input type="submit" value="sigen in">
+        </div>
+    </form>
+
+    <br>
+    <br>
+    <a href="../html.html">Back</a>
+    <br>
+    
+</body>
+</html>
